@@ -7,16 +7,16 @@ BEGIN {
     printf("[")
 }
 
+{
+    # trim Windows newlines
+    gsub("\r", "")
+}
+
 # get column headers from first line
 NR == 1 {
     for (i = 0; i < NF; ++i) {
         headers[i] = $(i+1)
     }
-}
-
-{
-    # trim Windows newlines
-    gsub("\r", "")
 }
 
 function quote (value) {
