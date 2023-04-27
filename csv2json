@@ -21,7 +21,7 @@ NR == 1 {
 
 function quote (value) {
     switch (value) {
-    case /[0-9].*/:
+    case /^[0-9].*$/:
     case "null":
         return value
         break
