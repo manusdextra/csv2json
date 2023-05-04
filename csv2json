@@ -1,6 +1,6 @@
 #!/usr/bin/awk -f
 #
-# Transforms mapping-ids.csv into mapping-ids.json
+# Transforms foobar.csv into foobar.json
 
 BEGIN {
     FS = ","
